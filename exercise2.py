@@ -41,34 +41,31 @@ print("Cost: " + str(total_cost) + ", Shipping: " + str(total_shipping) + ", Tot
 # Cost: 898.1999999999999, Shipping: 47.25, Total: 945.4499999999999
 
 
-# TODO; Dale - check this out... not sure if it is working right.
-
-# Dale has to do some research into time calculations to do the following.
+# Do some research into time calculations to do the following.
 # Perhaps something like this http://stackoverflow.com/questions/2788871/python-date-difference-in-minutes
+# Well... it turned out to be lots more research to tune up the date math.
 
 # If I leave my house at 6:52 am and run 1 mile at an easy pace (8:15 per mile),
 # then 3 miles at tempo (7:12 per mile) and 1 mile at easy pace again,
 # what time do I get home for breakfast?
 
-leave = "6:52 am"
-easy_mile_pace = "8:15 minutes"
-tempo_mile = "7:12 minutes"
-
-get_home = leave + easy_mile_pace + (3 * tempo_mile) + easy_mile_pace
-print("Get home: " + str(get_home))
-
-from datetime import datetime
+import datetime
 import time
 
-fmt = '%Y-%m-%d %H:%M:%S'
-d1 = datetime.strptime('2010-01-01 17:31:22', fmt)
-d2 = datetime.strptime('2010-01-03 20:15:14', fmt)
+year = datetime.date.today().year
+month = datetime.date.today().month
+day = datetime.date.today().day
+leave_time = datetime.datetime(year, month, day, 6, 52, 4)
+print("Leave time: " + str(leave_time))
+# Leave time: 2017-02-22 06:52:04
 
-# convert to unix timestamp
-d1_ts = time.mktime(d1.timetuple())
-d2_ts = time.mktime(d2.timetuple())
+minimum_time = datetime.datetime(year, month, day, 0, 0, 0)
+eazy_mile_pace_time = datetime.datetime(year, month, day,0,8,15)
+eazy_mile_pace_delta = eazy_mile_pace_time - minimum_time
 
-# they are now in seconds, subtract and then divide by 60 to get minutes.
-print (str((d2_ts - d1_ts) / 60))
-# 3043  # much better
+tempo_time = datetime.datetime(year, month, day,0,7,12)
+tempo_delta = tempo_time - minimum_time
 
+get_home = leave_time + eazy_mile_pace_delta + (tempo_delta + tempo_delta + tempo_delta) + eazy_mile_pace_delta
+print("Get home: " + str(get_home))
+# Get home: 2017-02-22 07:30:10
