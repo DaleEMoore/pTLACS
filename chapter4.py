@@ -1,7 +1,9 @@
 #/bin/python3
 
-# TODO; there are more exercises in section 4.3 page 31.
-# TODO; A 2 monitor system gets the previous centered on the 2 monitor break; move it.
+# There are more exercises in section 4.3 page 31. Not really, they are covered here.
+
+# A 2 monitor system gets the previous centered on the 2 monitor break; move it. Dale fixed this by using tkinter
+# canvas with turtle. I'm not really happy with that solution because I think there's overhead. But it works.
 
 import math
 import polygon
