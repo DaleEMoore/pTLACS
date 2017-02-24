@@ -1,0 +1,33 @@
+infopTLACS.txt
+This comes from the book
+Python - Think like a Computer Scientist
+or
+Think Python
+
+
+
+Overview
+
+
+
+
+
+
+TODO
+Solve the exercises in the Think Python book.
+
+Change my exercise4.py turtle graphics code to accomidate my 2 monitor system. Right now the turtle canvas spans the two
+monitors and the graphic is drawn in the middle between the two monitors so it's difficult to see. I want to change the
+canvas to fit into one monitor.
+    draw1.py - combines tkinter canvas and turtle and it's position well.
+    canvas or screen (Canvas, ScrolledCanvas or TurtleScreen) from https://docs.python.org/2/library/turtle.html.
+
+
+
+
+
+
+
+Logs
+Fri 24 Feb 2017 2:09 pm CST
+Created

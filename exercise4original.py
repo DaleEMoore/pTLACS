@@ -26,7 +26,7 @@ bob = turtle.Turtle()
 bob.penup()
 #bob.setx(100)
 #bob.sety(100)
-radius = 200
+radius = 20
 bob.pendown()
 polygon.circle(bob, radius)
 reply = input("Tap ENTER to continue...")
