@@ -3,9 +3,10 @@
 # TODO; there are more exercises in section 4.3 page 31.
 # TODO; A 2 monitor system gets the previous centered on the 2 monitor break; move it.
 
+import math
 import polygon
-import turtle
 import tkinter
+import turtle
 
 def square(t, length):
     """Draws a square with sides of the given length.
@@ -16,9 +17,58 @@ def square(t, length):
         t.fd(length)
         t.lt(90)
 
+def polyline(t, n, length, angle):
+    """Draws n line segments.
+
+    t: Turtle object
+    n: number of line segments
+    length: length of each segment
+    angle: degrees between segments
+    """
+    for i in range(n):
+        t.fd(length)
+        t.lt(angle)
+
+def polygon(t, n, length):
+    """Draws a polygon with n sides.
+
+    t: Turtle
+    n: number of sides
+    length: length of each side.
+    """
+    angle = 360.0/n
+    polyline(t, n, length, angle)
+
 def pass_bob(t,length):
     bob = t
     square(bob,length)
+
+def arc(t, r, angle):
+    """Draws an arc with the given radius and angle.
+
+    t: Turtle
+    r: radius
+    angle: angle subtended by the arc, in degrees
+    """
+    arc_length = 2 * math.pi * r * abs(angle) / 360
+    n = int(arc_length / 4) + 1
+    step_length = arc_length / n
+    step_angle = float(angle) / n
+
+    # making a slight left turn before starting reduces
+    # the error caused by the linear approximation of the arc
+    t.lt(step_angle/2)
+    polyline(t, n, step_length, step_angle)
+    t.rt(step_angle/2)
+
+def circle(t, r):
+    """Draws a circle with the given radius.
+
+    t: Turtle
+    r: radius
+    """
+    arc(t, r, 360)
+    #polygon(t,r,60)
 
 def main():
     print("Exercise 4.1")
@@ -28,7 +78,8 @@ def main():
     cv = tkinter.Canvas(root, width=600, height=600)
     cv.pack(side=tkinter.LEFT)
 
-    # This is how we create a turtle to draw on the canvas we created above.
+    # This is how we create a turtle to draw
+    # on the canvas we created above.
     t = turtle.RawTurtle(cv)
     screen = t.getscreen()
     center_position = t.position()
@@ -45,11 +96,23 @@ def main():
     pass_bob(t,20)
     reply = input("Tap ENTER to continue...")
     t.reset()
-    t.penup(); t.setposition(0,100); t.pendown()
-    t.write("Exercise 4.3.2", font=("Arial", 16, "normal"))
+    t.penup(); t.setposition(-250,100); t.pendown()
+    t.write("Exercise 4.3.2 already done in Exercise 4.3.1a and b.", font=("Arial", 16, "normal"))
     t.penup(); t.setposition(center_position); t.pendown()
-
     reply = input("Tap ENTER to continue...")
+    t.reset()
+    t.penup(); t.setposition(0,200); t.pendown()
+    t.write("Exercise 4.3.3.", font=("Arial", 16, "normal"))
+    t.penup(); t.setposition(center_position); t.pendown()
+    polygon(t,5,100)
+    reply = input("Tap ENTER to continue...")
+    t.reset()
+    t.penup(); t.setposition(0,200); t.pendown()
+    t.write("Exercise 4.3.4 then 5.", font=("Arial", 16, "normal"))
+    t.penup(); t.setposition(center_position); t.pendown()
+    circle(t,100)
+    reply = input("Tap ENTER to continue...")
+
 
 
     #t.done()
