@@ -1,13 +1,13 @@
 infopTLACS.txt
 This comes from the book
-Python - Think like a Computer Scientist
-or
-Think Python
+Think Python: How to Think Like a Computer Scientist
+Allen B. Downey
+2nd Edition, Version 2.2.20
 
 
 
 Overview
-
+Learn to think in Python!
 
 
 
@@ -15,7 +15,26 @@ Overview
 
 TODO
 Solve the exercises in the Think Python book.
+    http://www.openbookproject.net/thinkcs/python/english2e/
+    http://greenteapress.com/wp/think-python-2e/
+    https://www.pythonanywhere.com/
 
+Other Python learning resources
+    http://home.cc.gatech.edu/csl/CSLearning4U
+    http://www.pythontutor.com/
+    http://www.skulpt.org/
+    http://reputablejournal.com/category/python.html
+    http://interactivepython.org/runestone/static/pythonds/index.html
+    https://www.pythonanywhere.com/user/DaleEMoore/consoles/
+
+Caleb has a different copy of this book.
+    http://interactivepython.org/courselib/static/thinkcspy/index.html
+
+
+
+I got an Android application Learn Python by SoloLearn so I created file learnPython.py to explore some
+of it's subjects. Then Learn Python pushed me to install their newer app SoloLearn: Learn to Code. And I'm
+using that now too.
 
 
 
