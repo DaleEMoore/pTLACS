@@ -68,6 +68,9 @@ def recurse(n, s):
 
 
 def main() -> object:
+    """
+    These are in chapter5.py because of the input needed for triangle testing.
+
     print("Exercise 5.1")
     # Write a script that reads the current time and converts it to a time of day in hours, minutes, and seconds,
     # plus the number of days since the epoch.
@@ -93,12 +96,10 @@ def main() -> object:
     b = int(input("Length of side B:"))
     c = int(input("Length of side C:"))
     is_triangle(a, b, c)
-
-
     """
-    Moved to chapter5a to avoid having to enter the input for Exercise 5.3 on every test run.
 
     print ("Exercise 5.4")
+    #a = input("Tap ENTER to continue.")
     recurse(3,0)
     # 6
 
@@ -111,6 +112,7 @@ def main() -> object:
         #print(sys.exec_info()[2])
 
     print ("Exercise 5.5")
+    #a = input("Tap ENTER to continue.")
     # Read the code, figure it out then try it here.
 
     root = tkinter.Tk()
@@ -128,18 +130,20 @@ def main() -> object:
     draw(t2, 10, 4)
 
     print ("Exercise 5.6")
+    a = input("Tap ENTER to continue.")
     print ("TODO; this isn't right, it keeps expanding and never stops...")
-    t2 = turtle.Turtle()
+    t2.reset()
+    #t2 = turtle.Turtle()
     draw(t2, 10, 10/3)
-    t2.lt(60)
-    draw(t2, 10, 10/3)
-    t2.lt(120)
-    draw(t2, 10, 10/3)
-    t2.lt(60)
-    draw(t2, 10, 10/3)
+    #t2.lt(60)
+    #draw(t2, 10, 10/3)
+    #t2.lt(120)
+    #draw(t2, 10, 10/3)
+    #t2.lt(60)
+    #draw(t2, 10, 10/3)
 
     # TODO; more stuff for this section need doing!
-    """
+    pass
 
 # Python jumps right here after executing the def main() line. These two lines tell
 # Python to jump to the first line of the main function above. Seems a little strange,

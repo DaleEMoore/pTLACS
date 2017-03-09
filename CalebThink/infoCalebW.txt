@@ -1,0 +1,19 @@
+infoCalebW.txt
+Pyton: Think like a computer scientist
+from: http://interactivepython.org/courselib/static/thinkcspy/index.html
+Note that it's NOT NECESSARY TO REGISTER on the site!
+
+Overview
+Read and do the exercises.
+
+
+
+TODO
+Dale is at
+    http://interactivepython.org/courselib/static/thinkcspy/SimplePythonData/toctree.html
+    in Caleb's copy.
+
+
+Logs
+Thursday 9 March 2017 1:56 PM CST
+Created by DaleEMoore@gMail.Com
