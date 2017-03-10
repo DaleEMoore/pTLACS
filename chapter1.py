@@ -5,12 +5,12 @@
 # Exercise 1.1
 print("Hello, world!")
 
-# NameError: name 'pirnt' is not defined
-#pirnt("Hello, world!")
-
 # Exercise 1.1 1
 # SyntaxError: Missing parentheses in call to 'print'
 #print "Hello, world!"
+
+# NameError: name 'pirnt' is not defined
+#pirnt("Hello, world!")
 
 # Exercise 1.1 2
 # SyntaxError: EOL while scanning string literal
