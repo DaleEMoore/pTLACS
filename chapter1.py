@@ -5,38 +5,38 @@
 # Exercise 1.1
 print("Hello, world!")
 
-# Exercise 1.1 1
-# SyntaxError: Missing parentheses in call to 'print'
+print("Exercise 1.1 1")
+print("SyntaxError: Missing parentheses in call to 'print'")
 #print "Hello, world!"
 
-# NameError: name 'pirnt' is not defined
+print("NameError: name 'pirnt' is not defined")
 #pirnt("Hello, world!")
 
-# Exercise 1.1 2
-# SyntaxError: EOL while scanning string literal
+print("Exercise 1.1 2")
+print("SyntaxError: EOL while scanning string literal")
 #print ("Hello, world!)
 
-# Exercise 1.1 3
+print("Exercise 1.1 3")
 i2 = 2++2
 print(i2)
 # prints 4.
 
-# Exercise 1.1 4
-# SyntaxError: invalid token
+print("Exercise 1.1 4")
+print("SyntaxError: invalid token")
 #i2 = 02
 
-# Exercise 1.1 5
-# SyntaxError: invalid syntax
+print("Exercise 1.1 5")
+print("SyntaxError: invalid syntax")
 #i2 = 2 2
 
-# Exercise 1.2
+print("Exercise 1.2")
 
-# 1.2 1
+print("Exercise 1.2 1")
 # How many seconds in 42 minutes and 42 seconds?
 i2 = 42*60 + 42
 print("Seconds: " + str(i2))
 
-# 1.2 2
+print("Exercise 1.2 2")
 # How many miles in 10 kilometers at 1.61 kilometers per mile?
 KMpM = 1.61
 i2 = 10 / KMpM

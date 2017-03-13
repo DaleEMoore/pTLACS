@@ -1,8 +1,8 @@
 #/bin/python3
 
-# Exercise 2.1
+print("Exercise 2.1")
 n = 1
-# SyntaxError: can't assign to literal
+print("SyntaxError: can't assign to literal")
 #42 = n
 
 x = y = 1
@@ -12,17 +12,17 @@ print (x, y)
 n = 1;
 
 n = 1. # Not an error, the value "1.0"
-# SyntaxError: invalid syntax
+print("SyntaxError: invalid syntax")
 #a = n.
 
 x = 2
 y = 4
-# NameError: name 'xy' is not defined
+print("NameError: name 'xy' is not defined")
 #print(xy)
 print(x*y) # 8
 
 
-# Exercise 2.2
+print("Exercise 2.2")
 radius = 5
 volume_of_a_sphere = (4/3) * 3.1415926 * (radius ^ 3)
 print("Volume of a sphere: " + str(volume_of_a_sphere))
