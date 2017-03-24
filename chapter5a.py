@@ -56,7 +56,8 @@ def recurse(n, s):
     :param n:
     :param s:
     """
-    if n == 0:
+    if n <= 0:
+    #if n == 0: # This might be broken... This was a BUG!
         print(s)
     else:
         try:
@@ -132,9 +133,10 @@ def main() -> object:
 
     print ("Exercise 5.6")
     a = input("Tap ENTER to continue.")
+    print ("TODO; this isn't right, it keeps expanding and never stops...")
     t2.reset()
     #t2 = turtle.Turtle()
-    draw(t2, 10, 10/3) # this goes on forever.
+    draw(t2, 10, 10/3)
     #t2.lt(60)
     #draw(t2, 10, 10/3)
     #t2.lt(120)
