@@ -133,18 +133,20 @@ def main() -> object:
 
     print ("Exercise 5.6")
     a = input("Tap ENTER to continue.")
-    print ("TODO; this isn't right, it keeps expanding and never stops...")
     t2.reset()
-    #t2 = turtle.Turtle()
-    draw(t2, 10, 10/3)
-    #t2.lt(60)
-    #draw(t2, 10, 10/3)
-    #t2.lt(120)
-    #draw(t2, 10, 10/3)
-    #t2.lt(60)
-    #draw(t2, 10, 10/3)
+    length=10
+    n2=10/3
+    t2.fd(length*n2)
+    t2.lt(60)
+    t2.fd(length*n2)
+    t2.lt(120)
+    t2.fd(length*n2)
+    t2.lt(60)
+    t2.fd(length*n2)
 
     a = input("Tap ENTER to continue.")
+    print ("Exercise 5.6")
+    t2.reset()
 
     # TODO; more stuff for this section need doing!
     pass
