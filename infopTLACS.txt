@@ -19,6 +19,7 @@ Solve the exercises in the Think Python book.
     http://greenteapress.com/wp/think-python-2e/
     https://www.pythonanywhere.com/
 
+
 Caleb has a different copy of this book.
     http://interactivepython.org/courselib/static/thinkcspy/index.html
 
