@@ -8,16 +8,36 @@ import tkinter
 import turtle
 
 
-def draw(t, length, n):
+def draw(t, length, n, angle):
     print("draw " + str(t) + ", " + str(length) + ", " + str(n))
+    if n == 0:
+        return
     if n <= 0:
+        print("n (" + str(n) + " <= 0")
+        return
+    #angle = 50
+    t.fd(length*n)
+    t.lt(angle)
+    draw(t, length, n-1, angle)
+    t.rt(2*angle)
+    draw(t, length, n-1, angle)
+    t.lt(angle)
+    t.bk(length*n)
+
+
+def draw50(t, length, n):
+    print("draw50 " + str(t) + ", " + str(length) + ", " + str(n))
+    if n == 0:
+        return
+    if n <= 0:
+        print("n (" + str(n) + ") <= 0")
         return
     angle = 50
     t.fd(length*n)
     t.lt(angle)
-    draw(t, length, n-1)
+    draw50(t, length, n-1)
     t.rt(2*angle)
-    draw(t, length, n-1)
+    draw50(t, length, n-1)
     t.lt(angle)
     t.bk(length*n)
 
@@ -56,6 +76,7 @@ def recurse(n, s):
     :param n:
     :param s:
     """
+    print("n=" + str(n) + ", s=" + str(s))
     if n <= 0:
     #if n == 0: # This might be broken... This was a BUG!
         print(s)
@@ -103,10 +124,16 @@ def main() -> object:
     print ("Exercise 5.4")
     #a = input("Tap ENTER to continue.")
     recurse(3,0)
+    print(" __main__")
+    print(" recurse(n=3, s=0)")
+    print(" recurse(n=2, s=3)")
+    print(" recurse(n=1, s=5)")
+    print(" recurse(n=0, s=6)")
     # 6
 
     try:
         recurse(-1,0)
+        print("No RecursionError!")
         # RecursionError: maximum recursion depth exceeded in comparison
     except RecursionError:
         print("RecursionError: ")
@@ -129,27 +156,29 @@ def main() -> object:
     center_position = t2.position()
 
     #t2 = turtle.Turtle()
-    draw(t2, 10, 4)
-
-    print ("Exercise 5.6")
+    draw50(t2, 10, 4)
     a = input("Tap ENTER to continue.")
     t2.reset()
-    length=10
-    n2=10/3
-    t2.fd(length*n2)
-    t2.lt(60)
-    t2.fd(length*n2)
-    t2.lt(120)
-    t2.fd(length*n2)
-    t2.lt(60)
-    t2.fd(length*n2)
+
+    print ("Exercise 5.6")
+    draw(t2, 10, 10/3, 60)
+    #draw(t2, 10, 10/3, 50)
+    #length=10
+    #n2=10/3
+    #t2.fd(length*n2)
+    #t2.lt(60)
+    #t2.fd(length*n2)
+    #t2.lt(120)
+    #t2.fd(length*n2)
+    #t2.lt(60)
+    #t2.fd(length*n2)
 
     a = input("Tap ENTER to continue.")
-    print ("Exercise 5.6")
-    t2.reset()
+    #print ("Exercise 5.6")
+    #t2.reset()
 
     # TODO; more stuff for this section need doing!
-    pass
+    #pass
 
 # Python jumps right here after executing the def main() line. These two lines tell
 # Python to jump to the first line of the main function above. Seems a little strange,
