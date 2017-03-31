@@ -1,0 +1,7 @@
+This
+http://thinkpython2.com/code/koch.py
+makes me think there's lots of other code at
+http://thinkpython2.com/code/
+
+So I'm getting it all to here before it disappears.
+

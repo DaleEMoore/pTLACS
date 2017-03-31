@@ -7,20 +7,27 @@ import time
 import tkinter
 import turtle
 
+def koch(turtle, lengthX):
+    print("koch " + str(turtle) + ", " + str(lengthX) + ", " + str(turtle))
 
-def draw(t, length, n, angle):
+
+def draw(t, length, n):
+    #def draw(t, length, n, angle):
+
     print("draw " + str(t) + ", " + str(length) + ", " + str(n))
     if n == 0:
         return
     if n <= 0:
         print("n (" + str(n) + " <= 0")
         return
-    #angle = 50
+    angle = 50
     t.fd(length*n)
     t.lt(angle)
-    draw(t, length, n-1, angle)
+    draw(t, length, n-1)
+    #draw(t, length, n-1, angle)
     t.rt(2*angle)
-    draw(t, length, n-1, angle)
+    draw(t, length, n - 1)
+    #draw(t, length, n-1, angle)
     t.lt(angle)
     t.bk(length*n)
 
@@ -161,7 +168,8 @@ def main() -> object:
     t2.reset()
 
     print ("Exercise 5.6")
-    draw(t2, 10, 10/3, 60)
+    draw(t2, 10, 10/3)
+    #draw(t2, 10, 10/3, 60)
     #draw(t2, 10, 10/3, 50)
     #length=10
     #n2=10/3

@@ -14,13 +14,14 @@ Learn to think in Python!
 
 
 TODO
+I'm having problems with chapter 5, exercise 5.6 koch curve. I'm going to get
+    http://thinkpython2.com/code/koch.py
+
+
 Solve the exercises in the Think Python book.
     http://www.openbookproject.net/thinkcs/python/english2e/
     http://greenteapress.com/wp/think-python-2e/
     https://www.pythonanywhere.com/
-
-Caleb has a different copy of this book.
-    http://interactivepython.org/courselib/static/thinkcspy/index.html
 
 Other Python learning resources
     http://home.cc.gatech.edu/csl/CSLearning4U
@@ -58,4 +59,8 @@ canvas to fit into one monitor.
     draw1.py - combines tkinter canvas and turtle and it's position well.
     canvas or screen (Canvas, ScrolledCanvas or TurtleScreen) from https://docs.python.org/2/library/turtle.html.
 
+
+Friday 31 March 2017 1:09 PM CST
+Caleb has a different copy of this book.
+    http://interactivepython.org/courselib/static/thinkcspy/index.html
 

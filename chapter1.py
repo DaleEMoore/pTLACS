@@ -35,12 +35,16 @@ print("Exercise 1.2 1")
 # How many seconds in 42 minutes and 42 seconds?
 i2 = 42*60 + 42
 print("Seconds: " + str(i2))
+# 2562
 
 print("Exercise 1.2 2")
 # How many miles in 10 kilometers at 1.61 kilometers per mile?
 KMpM = 1.61
 i2 = 10 / KMpM
 print("Miles: " + str(i2))
+#print("Miles: " + i2) # TypeError: Can't convert 'float' object to str implicitly
+# 6.211180124223602
+
 
 # 1.2 3
 # If you run a 10 kilometer race in 42 minutes and 42 seconds,
