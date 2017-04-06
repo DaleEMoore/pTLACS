@@ -73,7 +73,8 @@ def circle(t, r):
     #polygon(t,r,60)
 
 def main():
-    print("Exercise 4.1")
+    print("Section 4.12 Exercises on page 53")
+    #print("Exercise 4.3 on page ")
     # Here is the first line of the main function's code.
     root = tkinter.Tk()
     root.title("Draw!")
@@ -87,30 +88,30 @@ def main():
     center_position = t.position()
 
     t.penup(); t.setposition(0,100); t.pendown()
-    t.write("Exercise 4.3.1a", font=("Arial", 16, "normal"))
+    t.write("Exercise 4.3.1", font=("Arial", 16, "normal"))
     t.penup(); t.setposition(center_position); t.pendown()
     square(t,100)
     reply = input("Tap ENTER to continue...")
     t.reset()
     t.penup(); t.setposition(0,100); t.pendown()
-    t.write("Exercise 4.3.1b", font=("Arial", 16, "normal"))
+    t.write("Exercise 4.3.2", font=("Arial", 16, "normal"))
     t.penup(); t.setposition(center_position); t.pendown()
     pass_bob(t,20)
     reply = input("Tap ENTER to continue...")
     t.reset()
     t.penup(); t.setposition(-250,100); t.pendown()
-    t.write("Exercise 4.3.2 already done in Exercise 4.3.1a and b.", font=("Arial", 16, "normal"))
+    t.write("Exercise 4.3.3 already done in Exercise 4.1.1 and 4.1.2.", font=("Arial", 16, "normal"))
     t.penup(); t.setposition(center_position); t.pendown()
     reply = input("Tap ENTER to continue...")
     t.reset()
     t.penup(); t.setposition(0,200); t.pendown()
-    t.write("Exercise 4.3.3.", font=("Arial", 16, "normal"))
+    t.write("Exercise 4.3.3a", font=("Arial", 16, "normal"))
     t.penup(); t.setposition(center_position); t.pendown()
     polygon(t,5,100)
     reply = input("Tap ENTER to continue...")
     t.reset()
     t.penup(); t.setposition(0,200); t.pendown()
-    t.write("Exercise 4.3.4 then 5.", font=("Arial", 16, "normal"))
+    t.write("Exercise 4.4 then 5.", font=("Arial", 16, "normal"))
     t.penup(); t.setposition(center_position); t.pendown()
     circle(t,100)
     reply = input("Tap ENTER to continue...")
@@ -198,6 +199,12 @@ def main():
     #polygon.circle(bob, radius)
     #reply = input("Tap ENTER to continue...")
     """
+
+    print("Section 4.3 Exercises on page 59")
+    print("TODO; Exercise 4.3.1 on page 59")
+    print("TODO; Exercise 4.3.2")
+    print("TODO; Exercise 4.3.3")
+    print("TODO; Exercise 4.3.4")
 
 # Python jumps right here after executing the def main() line. These two lines tell
 # Python to jump to the first line of the main function above. Seems a little strange,

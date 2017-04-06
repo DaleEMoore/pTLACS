@@ -1,33 +1,37 @@
 #/bin/python3
 
+import math # for math.pi
+
 print("Exercise 2.1")
 n = 1
-print("SyntaxError: can't assign to literal")
+print("\"42 = n\" gets SyntaxError: can't assign to literal")
 #42 = n
 
 x = y = 1
 print (x, y)
 # printed "1 1"
 
-n = 1;
+n = 1; # No problem.
 
 n = 1. # Not an error, the value "1.0"
-print("SyntaxError: invalid syntax")
+print("\"a = n.\" gets SyntaxError: invalid syntax")
 #a = n.
 
 x = 2
 y = 4
-print("NameError: name 'xy' is not defined")
+print("\"print(xy)\" gets NameError: name 'xy' is not defined")
 #print(xy)
 print(x*y) # 8
 
 
-print("Exercise 2.2")
+print("Exercise 2.2.1")
 radius = 5
-volume_of_a_sphere = (4/3) * 3.1415926 * (radius ^ 3)
+volume_of_a_sphere = (4./3.) * math.pi * (radius ^ 3)
+#volume_of_a_sphere = (4/3) * 3.1415926 * (radius ^ 3)
 print("Volume of a sphere: " + str(volume_of_a_sphere))
 # Volume of a sphere: 25.132740799999997
 
+print("Exercise 2.2.2")
 cover_price = 24.95
 discount_rate = .40
 discount = cover_price * discount_rate
@@ -48,6 +52,8 @@ print("Cost: " + str(total_cost) + ", Shipping: " + str(total_shipping) + ", Tot
 # If I leave my house at 6:52 am and run 1 mile at an easy pace (8:15 per mile),
 # then 3 miles at tempo (7:12 per mile) and 1 mile at easy pace again,
 # what time do I get home for breakfast?
+
+print("Exercise 2.2.3")
 
 import datetime
 import time

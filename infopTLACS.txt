@@ -3,6 +3,8 @@ This comes from the book
 Think Python: How to Think Like a Computer Scientist
 Allen B. Downey
 2nd Edition, Version 2.2.20
+http://greenteapress.com/wp/think-python-2e
+https://github.com/AllenDowney/ThinkPython2
 
 
 
@@ -16,6 +18,10 @@ Learn to think in Python!
 TODO
 I'm having problems with chapter 5, exercise 5.6 koch curve. I'm going to get
     http://thinkpython2.com/code/koch.py
+    I got all the other code I found there, then I found this reference https://github.com/AllenDowney/ThinkPython2
+    and realize I could get all the code associated with that version of the book. Perhaps I'll do that if needed.
+
+    koch.py prints a nice little snowflake.
 
 
 Solve the exercises in the Think Python book.
