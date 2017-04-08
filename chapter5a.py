@@ -120,6 +120,7 @@ def main() -> object:
     print ("Exercise 5.3")
     # check that 3 stick lengths are a triangle
     is_triangle(1, 2, 3)
+
     is_triangle(1, 2, 10)
     print("HEY YOU; Enter numbers for the following 3 items.")
     a = int(input("Length of side A:"))

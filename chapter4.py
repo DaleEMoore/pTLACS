@@ -9,6 +9,11 @@ import math
 import polygon
 import tkinter
 import turtle
+import flower
+import pie
+#import letters # imported by typewriter, not needed here.
+import typewriter
+
 
 def square(t, length):
     """Draws a square with sides of the given length.
@@ -38,6 +43,7 @@ def polygon(t, n, length):
     n: number of sides
     length: length of each side.
     """
+    print("polygon(" + str(t) + ", " + str(n) + ", " + str(length))
     angle = 360.0/n
     polyline(t, n, length, angle)
 
@@ -52,6 +58,7 @@ def arc(t, r, angle):
     r: radius
     angle: angle subtended by the arc, in degrees
     """
+    print("arc(" + str(t) + ", " + str(r) + ", " + str(angle) + ")")
     arc_length = 2 * math.pi * r * abs(angle) / 360
     n = int(arc_length / 4) + 1
     step_length = arc_length / n
@@ -69,6 +76,7 @@ def circle(t, r):
     t: Turtle
     r: radius
     """
+    print("circle(" + str(t) + ", " + str(r) + ")")
     arc(t, r, 360)
     #polygon(t,r,60)
 
@@ -88,30 +96,40 @@ def main():
     center_position = t.position()
 
     t.penup(); t.setposition(0,100); t.pendown()
-    t.write("Exercise 4.3.1", font=("Arial", 16, "normal"))
+    s1 = "Exercise 4.3.1"
+    print(s1)
+    t.write(s1, font=("Arial", 16, "normal"))
     t.penup(); t.setposition(center_position); t.pendown()
     square(t,100)
     reply = input("Tap ENTER to continue...")
     t.reset()
     t.penup(); t.setposition(0,100); t.pendown()
-    t.write("Exercise 4.3.2", font=("Arial", 16, "normal"))
+    s1 = "Exercise 4.3.2"
+    print(s1)
+    t.write(s1, font=("Arial", 16, "normal"))
     t.penup(); t.setposition(center_position); t.pendown()
     pass_bob(t,20)
     reply = input("Tap ENTER to continue...")
     t.reset()
     t.penup(); t.setposition(-250,100); t.pendown()
-    t.write("Exercise 4.3.3 already done in Exercise 4.1.1 and 4.1.2.", font=("Arial", 16, "normal"))
+    s1 = "Exercise 4.3.3 already done in Exercise 4.1.1 and 4.1.2."
+    print(s1)
+    t.write(s1, font=("Arial", 16, "normal"))
     t.penup(); t.setposition(center_position); t.pendown()
     reply = input("Tap ENTER to continue...")
     t.reset()
     t.penup(); t.setposition(0,200); t.pendown()
-    t.write("Exercise 4.3.3a", font=("Arial", 16, "normal"))
+    s1 = "Exercise 4.3.3a"
+    print(s1)
+    t.write(s1, font=("Arial", 16, "normal"))
     t.penup(); t.setposition(center_position); t.pendown()
     polygon(t,5,100)
     reply = input("Tap ENTER to continue...")
     t.reset()
     t.penup(); t.setposition(0,200); t.pendown()
-    t.write("Exercise 4.4 then 5.", font=("Arial", 16, "normal"))
+    s1 = "Exercise 4.4 then 5."
+    print(s1)
+    t.write(s1, font=("Arial", 16, "normal"))
     t.penup(); t.setposition(center_position); t.pendown()
     circle(t,100)
     reply = input("Tap ENTER to continue...")
@@ -200,11 +218,59 @@ def main():
     #reply = input("Tap ENTER to continue...")
     """
 
-    print("Section 4.3 Exercises on page 59")
-    print("TODO; Exercise 4.3.1 on page 59")
-    print("TODO; Exercise 4.3.2")
-    print("TODO; Exercise 4.3.3")
-    print("TODO; Exercise 4.3.4")
+    print("Section 4.12 Exercises on page 59")
+
+    t.reset()
+    t.penup(); t.setposition(0,200); t.pendown()
+    s1 = "Exercise 4.1.1 on page 59"
+    print(s1)
+    t.write(s1, font=("Arial", 16, "normal"))
+    print("Stack diagram should come out of the execution of circle(), next.")
+    t.penup(); t.setposition(center_position); t.pendown()
+    circle(t, 100)
+    reply = input("Tap ENTER to continue...")
+
+    t.reset()
+    t.penup(); t.setposition(0,200); t.pendown()
+    s1 = "Exercise 4.1.2 on page 59"
+    print(s1)
+    t.write(s1, font=("Arial", 16, "normal"))
+    t.penup(); t.setposition(center_position); t.pendown()
+    s1 = "TODO; compare arc versions accuracy."
+    print(s1)
+    t.write(s1, font=("Arial", 16, "normal"))
+    reply = input("Tap ENTER to continue...")
+
+    t.reset()
+    t.penup(); t.setposition(0,200); t.pendown()
+    s1 = "Exercise 4.2"
+    print(s1)
+    t.write(s1, font=("Arial", 16, "normal"))
+    t.penup(); t.setposition(center_position); t.pendown()
+    flower.flower(t, 6, 100, 100) # turtle, petals, radius, angle
+    reply = input("Tap ENTER to continue...")
+
+    t.reset()
+    t.penup(); t.setposition(0,200); t.pendown()
+    s1 = "Exercise 4.3"
+    print(s1)
+    t.write(s1, font=("Arial", 16, "normal"))
+    t.penup(); t.setposition(center_position); t.pendown()
+    pie.draw_pie(t, 5, 10) #     t: Turtle, n: number of segments, r: length of the radial spokes
+    reply = input("Tap ENTER to continue...")
+
+    t.reset()
+    t.penup(); t.setposition(0,200); t.pendown()
+    s1 = "TODO; Exercise 4.4"
+    print(s1)
+    t.write(s1, font=("Arial", 16, "normal"))
+    t.penup(); t.setposition(center_position); t.pendown()
+    s1 = "TODO; draw letters."
+    print(s1)
+    t.write(s1, font=("Arial", 16, "normal"))
+    typewriter.main(t)
+    reply = input("Tap ENTER to continue...")
+
 
 # Python jumps right here after executing the def main() line. These two lines tell
 # Python to jump to the first line of the main function above. Seems a little strange,
