@@ -16,6 +16,7 @@ import typewriter
 
 
 def square(t, length):
+
     """Draws a square with sides of the given length.
 
     Returns the Turtle to the starting position and location.
@@ -127,7 +128,15 @@ def main():
     reply = input("Tap ENTER to continue...")
     t.reset()
     t.penup(); t.setposition(0,200); t.pendown()
-    s1 = "Exercise 4.4 then 5."
+    s1 = "Exercise 4.3.4."
+    print(s1)
+    t.write(s1, font=("Arial", 16, "normal"))
+    t.penup(); t.setposition(center_position); t.pendown()
+    circle(t,100)
+    reply = input("Tap ENTER to continue...")
+    t.reset()
+    t.penup(); t.setposition(0,200); t.pendown()
+    s1 = "TODO; Exercise 4.3.5."
     print(s1)
     t.write(s1, font=("Arial", 16, "normal"))
     t.penup(); t.setposition(center_position); t.pendown()
@@ -265,7 +274,7 @@ def main():
     print(s1)
     t.write(s1, font=("Arial", 16, "normal"))
     t.penup(); t.setposition(center_position); t.pendown()
-    s1 = "TODO; draw letters."
+    s1 = "TODO; draw letters. How do I exit from this?"
     print(s1)
     t.write(s1, font=("Arial", 16, "normal"))
     typewriter.main(t)
