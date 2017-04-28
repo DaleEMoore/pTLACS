@@ -6,6 +6,8 @@ Allen B. Downey
 http://greenteapress.com/wp/think-python-2e
 https://github.com/AllenDowney/ThinkPython2
 
+make html
+    to create build/ html documentation files.
 
 
 Overview
@@ -70,3 +72,10 @@ Friday 31 March 2017 1:09 PM CST
 Caleb has a different copy of this book.
     http://interactivepython.org/courselib/static/thinkcspy/index.html
 
+
+
+Friday 27 April 2017 2:27 pm CST
+Installing sphinx for automatic documentation generation.
+make html
+http://localhost:63342/pTLACS/build/html/index.html?_ijt=fkrefa3b56nir8he2e4o2a5q6m#indices-and-tables
+Nothing in Index, Module Index or Search Page.
